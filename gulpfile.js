@@ -49,15 +49,14 @@ gulp.task('js', function() {
 });
 
 
-gulp.task('css-modal-select', function() {
-    return gulp.src( './src/ionic-modal-select.css')
-    .pipe(gulp.dest('./dist/'))
+gulp.task('css', function() {
+    return gulp.src( './src/css/**/*.css')
+    .pipe(gulp.dest('./dist/css'))
     .pipe(minifyCss({
       keepSpecialComments: 0
     }))
     .pipe(rename({ extname: '.min.css' }))
-    .pipe(gulp.dest('./dist/'))
-
+    .pipe(gulp.dest('./dist/css'))
 });
 
 
@@ -66,8 +65,9 @@ gulp.task('watch', function() {
   gulp.watch(['./src/index.html'], ['index']);
   gulp.watch(['./src/lib/**/*.*'], ['lib']);
   gulp.watch(['./src/js/**/*.*'], ['js']);
+  gulp.watch(['./src/css/**/*.css'], ['css']);
 
 });
 
-gulp.task('default', ['inline-templates', 'index', 'lib', 'js']);
+gulp.task('default', ['inline-templates', 'index', 'lib', 'js', 'css']);
 
