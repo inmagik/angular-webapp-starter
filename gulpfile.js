@@ -34,6 +34,7 @@ gulp.task('index', function(){
     gulp.src('src/index.html')
     .pipe(htmlreplace({
         'templatejs': 'templates/templates.min.js'
+        'applicationjs': 'js/application.min.js'
     }))
     .pipe(gulp.dest('dist/'));
 })
@@ -45,7 +46,10 @@ gulp.task('lib', function() {
 
 gulp.task('js', function() {
     return gulp.src( './src/js/**/*.*')
-    .pipe(gulp.dest('./dist/js'))
+    .pipe(concat('application.js'))
+    .pipe(uglify({mangle:false}))
+    .pipe(rename({ extname: '.min.js' }))
+    .pipe(gulp.dest('./dist'))
 });
 
 
