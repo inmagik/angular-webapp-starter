@@ -1,7 +1,10 @@
 (function(){
 "use strict";
 
-angular.module('ocio', ['app.networkconfig', 'app.statesconfig', 'http-auth-interceptor'])
+angular.module(
+    'app', 
+    ['app.networkconfig', 'app.statesconfig', 'http-auth-interceptor']
+)
 
 .run(function($rootScope){
 
@@ -14,6 +17,7 @@ angular.module('ocio', ['app.networkconfig', 'app.statesconfig', 'http-auth-inte
 
 
 .config(function(){})
+
 
 
 

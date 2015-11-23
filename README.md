@@ -1,6 +1,6 @@
 # angular-web-project
 
-Base angular project with
+Boilerplate angular project with
 
 - gulp
 - lodash
