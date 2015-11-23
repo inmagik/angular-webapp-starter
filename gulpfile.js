@@ -33,7 +33,7 @@ gulp.task('inline-templates', function() {
 gulp.task('index', function(){
     gulp.src('src/index.html')
     .pipe(htmlreplace({
-        'templatejs': 'templates/templates.min.js'
+        'templatejs': 'templates/templates.min.js',
         'applicationjs': 'js/application.min.js'
     }))
     .pipe(gulp.dest('dist/'));
