@@ -16,7 +16,7 @@ angular.module('app.networkconfig', ['restangular'])
     */
 
     // Restangular configuration
-    var baseServerUrl = '/chat/'//'http://192.168.1.81:8000/api/'//;
+    var baseServerUrl = '/api/'//'http://192.168.1.81:8000/api/'//;
     RestangularProvider.setBaseUrl(baseServerUrl);
     /* Default config for Restangular */
     /*

@@ -4,7 +4,20 @@
 
 angular.module('app.statesconfig', ['ui.router'])
 
-.run(function(){})
+.run(function($rootScope){
+
+    //perform redirects based on login/logout here
+    /*
+    $rootScope.$on("app:logoutSuccess", function(){
+        $state.go("app.login");
+    })
+
+    $rootScope.$on("app:loginSuccess", function(){
+        $state.go("app.home");
+    })
+    */
+
+})
 
 .config(function($stateProvider, $urlRouterProvider){
 

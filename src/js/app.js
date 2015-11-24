@@ -3,7 +3,11 @@
 
 angular.module(
     'app', 
-    ['app.networkconfig', 'app.statesconfig', 'app.permissions' ,'http-auth-interceptor']
+    [
+        'app.networkconfig', 'app.statesconfig', 'app.permissions' ,'http-auth-interceptor',
+        // 'app.satellizerconfig'
+
+    ]
 )
 
 .run(function($rootScope){
@@ -16,7 +20,6 @@ angular.module(
     });
     */
 
-    
     // hooks provided by angular-permission
     // redirections can be handled directly in state definitions, via "redirectTo" parameter
     
