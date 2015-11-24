@@ -31,8 +31,14 @@ angular.module('app.statesconfig', ['ui.router'])
         //controller: 'AccountCtrl',
         resolve: {
           
-        }
+        },
+        data: {
+            permissions: {
+                except: ['anonymous']
+            }
+        },
     })
+    
     .state('app.home', {
         url: '/home',
         templateUrl: 'templates/home.html',
@@ -41,7 +47,14 @@ angular.module('app.statesconfig', ['ui.router'])
         },
         resolve: {
           
-        }
+        },
+        /*
+        data: {
+            permissions: {
+                only: ['admin']
+            }
+        },
+        */
     })
 
     $urlRouterProvider.otherwise(function ($injector) {
