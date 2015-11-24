@@ -8,7 +8,7 @@ Boilerplate angular project with
 - restangular
 - angular-http-auth
 - angular-permission
-
+- [satellizer]
 
 ## Routing
 
@@ -21,7 +21,6 @@ This feature is based on Restangular.
 #####TODO: write some boilerplate/examples for configuring rest services based on Restangular
 
 
-
 ## Autentication
 
 
@@ -30,11 +29,12 @@ as well as mechanism to retry failed calls after login (#todo: link docs)
 
 ### Authentication flow
 
-IN PROGRESS
-Many options:
+[IN PROGRESS]
+
+Options:
 
 * hello.js (client auth only, with support to many services and abstraction on common methods)
-* satellizer (oauth/oauth2 support)
+* **satellizer** (oauth/oauth2 support)
 * ng-token-auth (similar to satellizer, with support for many events)
 
 (For apache-cordova see:  ng-cordova-oauth)
