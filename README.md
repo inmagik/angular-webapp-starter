@@ -18,7 +18,7 @@ We use ui-router for routing.
 ## Consuming REST
 
 This feature is based on Restangular.
-#TODO: write some boilerplate/examples for configuring rest services based on Restangular
+#####TODO: write some boilerplate/examples for configuring rest services based on Restangular
 
 
 
@@ -41,7 +41,7 @@ Many options:
 
 ## Integration examples
 
-?? how to handle them ? plugins ?
+?? how to handle them ? "plugins" ?
 
 
 
