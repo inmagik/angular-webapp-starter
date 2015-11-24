@@ -3,7 +3,7 @@
 
 angular.module(
     'app', 
-    ['app.networkconfig', 'app.statesconfig', 'http-auth-interceptor']
+    ['app.networkconfig', 'app.statesconfig', 'app.permissions' ,'http-auth-interceptor']
 )
 
 .run(function($rootScope){

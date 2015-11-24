@@ -39,6 +39,14 @@ Many options:
 
 (For apache-cordova see:  ng-cordova-oauth)
 
+### Use cases
+
+* social only.
+
+
+
+
+
 ## Integration examples
 
 ?? how to handle them ? "plugins" ?
