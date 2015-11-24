@@ -34,8 +34,10 @@ angular.module('app.statesconfig', ['ui.router'])
         },
         data: {
             permissions: {
-                except: ['anonymous']
-            }
+                except: ['anonymous'],
+                redirectTo: 'app.login'
+            },
+
         },
     })
     
