@@ -7,6 +7,7 @@ Boilerplate angular project with
 - angular-ui-router
 - restangular
 - angular-http-auth
+- angular-permission
 
 
 ## Routing

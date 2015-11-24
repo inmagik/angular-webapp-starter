@@ -4,9 +4,9 @@
 
 angular.module('app.networkconfig', ['restangular'])
 
-.config(function(){})
+.run(function(){})
 
-.run(function(RestangularProvider, $httpProvider){
+.config(function(RestangularProvider, $httpProvider){
 
     /* CORS config. Affects all $http based services, included Restangular */
     /*

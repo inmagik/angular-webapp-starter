@@ -4,9 +4,9 @@
 
 angular.module('app.statesconfig', ['ui.router'])
 
-.config(function(){})
+.run(function(){})
 
-.run(function($stateProvider, $urlRouterProvider){
+.config(function($stateProvider, $urlRouterProvider){
 
     /* States config */
 
@@ -15,7 +15,7 @@ angular.module('app.statesconfig', ['ui.router'])
         url: '/app',
         abstract: true,
         template : '<ui-view></ui-view>',
-        controller : 'AppCtrl'
+        //controller : 'RootCtrl'
     })
     .state('app.login', {
         url: '/login',

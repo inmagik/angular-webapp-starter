@@ -8,11 +8,9 @@
     <title>App title</title>
 
 </head>
-<body ng-app="app">
+<body ng-app="app" ng-controller="AppCtrl">
     
-    <div ui-view>
-        
-    </div>
+    <div ui-view></div>
 
     <!-- build:templatejs -->
     <!-- endbuild -->
@@ -31,11 +29,12 @@
     <!-- build:applicationjs -->
     
     <script src="js/modules/networkconfig/networkconfig.js"></script>    
+    <script src="js/modules/permissionsconfig/permissionsconfig.js"></script>    
     <script src="js/modules/statesconfig/statesconfig.js"></script>    
-
+    
     <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/services.js"></script>
+    <script src="js/controllers/app-controller.js"></script>
+    
 
     <!-- endbuild -->
     

@@ -20,6 +20,7 @@
     "lodash": "~3.10.1",
     "angular": "~1.4.8",
     "restangular": "~1.5.1",
-    "angular-http-auth": "~1.2.2"
+    "angular-http-auth": "~1.2.2",
+    "angular-permission": "~1.1.1"
   }
 }
