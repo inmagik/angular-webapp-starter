@@ -37,6 +37,5 @@
   },
   "_source": "git://github.com/Narzerus/angular-permission.git",
   "_target": "~1.1.1",
-  "_originalSource": "angular-permission",
-  "_direct": true
+  "_originalSource": "angular-permission"
 }
